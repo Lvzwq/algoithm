@@ -17,9 +17,9 @@ class Solution:
         length = len(nums)
         n = length - k % length
         for i in range(n):
-            nums.append(nums[i])
-        for i in range(n):
+            nums.append(nums[0])
             nums.pop(0)
+
 
 s = Solution()
 s.rotate([1, 2, 3, 4, 5, 6, 7], 3)
